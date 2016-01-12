@@ -1,0 +1,92 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.background {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    /*color: white;*/
+    text-align: center;
+    padding: 55px 0px 0px;
+    background-position: center bottom;
+}
+
+.fake-name > img {
+    width: auto;
+    height: 60px;
+}
+
+.first-part {
+    margin: 50px 0px 30px;
+}
+
+.mission-statement {
+    font-size: 16px;
+    padding: 0px 14px;
+    line-height: 1.5;
+    width: 350px;
+    margin: 0px;
+}
+
+.get-email-box {
+    width: 350px;
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 0px 14px;
+}
+
+.get-email-box > h3 {
+    margin: 0px;
+}
+
+.email-logo > svg{
+    fill: rgb(255, 87, 34);
+}
+
+.down-arrow-icon {
+    margin-bottom: -20px;
+    padding-top: 90px;
+}
+
+.down-arrow-icon > md-icon {
+    border: 2px solid black;
+    background-color: #F9F9F9;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+input#email-input-box {
+    height: 30px;
+    font-size: 20px;
+    width: 300px;
+    /*color: white*/
+}
+
+.email-label {
+    font-size: 20px;
+    /*color: white;*/
+}
+
+.divider {
+    height: 30px;
+}
+
+.topic-selector {
+    width: 200px;
+}
+
+.legislation-tabs {
+    max-width: 800px;
+}
+
+.legislation-content {
+    background-color: #f9f9f9;
+}
+
+#legislation-container {
+    padding: 30px 30px 60px;
+    background-color: #F9F9F9;
+}
+
+.legislation-headline {
+    text-align: center;
+    max-width: 600px;
+}

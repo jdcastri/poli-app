@@ -1,0 +1,44 @@
+<div class="background">
+    <div layout="column" layout-align"center center">
+        <div class="fake-name">
+            <img src="poli_title.png">
+        </div>
+        <div layout="row" layout-align="center start" class="first-part">
+            <h2 class="md-display-1 mission-statement">We believe all legislation should be <b>distilled</b> and <b>tailored</b> for you! We're building an app that will help citizens like you become more aware of current legislation!</h2>
+            <div class="get-email-box">
+                <h3 class="md-headline ">To learn more, add your email below</h3>
+                <md-input-container>
+                    <label class="email-label">Email ...</label>
+                    <md-icon md-svg-src="ic_email_black_24px.svg" class="email-logo"></md-icon>
+                    <input type='text' ng-model="email" id="email-input-box" focus="true">
+                </md-input-container>
+            </div>
+        </div>
+        <div class="down-arrow-icon">
+            <md-icon md-svg-src="ic_keyboard_arrow_down_black_24px.svg"></md-icon>
+        </div>
+    </div>
+</div>
+<!-- <div class="divider"></div> -->
+<div id="legislation-container">
+    <div class="legislation-opener" layout="column" layout-align="center center">
+        <h3 class="md-headline legislation-headline">A simple example of a few pieces of legislation you would see if you were interested in...</h3>
+        <md-tabs md-dynamic-height md-border-bottom md-center-tabs class="legislation-tabs">
+            <md-tab ng-repeat="(topic, value) in legislation" label="{{topic}}">
+                <md-content class="legislation-content">
+                    <h3>{{topic}} Legislation</h3>
+                    <md-list>
+                        <md-list-item class="md-2-line" ng-repeat="bill in legislation[topic]">
+                            <md-icon md-svg-icon="ic_keyboard_arrow_right_black_24px.svg"></md-icon>
+                            <div class="md-list-item-text">
+                                <h3> {{ bill.name }} </h3>
+                                <p> {{ bill.description }} </p>
+                                <p><b> {{ bill.date }} </b></p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </div>
+</div>
