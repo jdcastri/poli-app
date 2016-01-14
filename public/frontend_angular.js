@@ -135,22 +135,21 @@ angular.module('GrassLeg', [
     }]
   };
 
-  $scope.topic_value = "Gun Control";
-
   $scope.submitEmail = function() {
     if ($scope.email) {
+
       $http.post('/newEmail', {email: $scope.email})
         .then(function() {
           var alert = $mdDialog.alert()
-              .parent(angular.element(document.querySelector('#popupContainer')))
               .clickOutsideToClose(true)
               .title('Thank you!')
               .textContent('We will keep you posted on the development of our applications. Together, we are confident we change the way people engage with legislation.')
               .ariaLabel('Email Submitted')
-              .ok('Close')
-          $mdDialog.show(alert).finally(function() {
-            $route.reload();
-          });
+              .ok('Close');
+          $mdDialog.show(alert)
+            .finally(function() {
+              $route.reload();
+            });
         });
     }
   }
