@@ -4,10 +4,11 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "angular-sanitize": "^1.4.8",
     "angular-scroll": "^1.0.0",
     "body-parser": "^1.14.2",
-    "express": "^4.13.3",
     "ejs-locals": "^1.0.2",
+    "express": "^4.13.3",
     "morgan": "^1.6.1"
   },
   "devDependencies": {},

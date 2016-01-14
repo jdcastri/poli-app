@@ -20,9 +20,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.route('/')
-  .get(function(req, res) {
-     res.render('index');
-  });
+    .get(function(req, res) {
+        res.render('index');
+    });
+
+app.route('/newEmail')
+    .post(function(req, res) {
+        if (req.body.email) {
+            // send email
+            console.log(req.body.email);
+            res.sendStatus(200);
+        } else {
+            res.sendStatus(400);
+        }
+    })
 
 app.listen(process.env.PORT || 8000);
 console.log("Server Started");

@@ -4,7 +4,8 @@ angular.module('GrassLeg', [
     'ngResource',
     'ngRoute',
     'ngMaterial',
-    'smoothScroll'
+    'ngMessages',
+    'ngSanitize'
 ])
 
 .config(function($routeProvider, $mdThemingProvider) {
@@ -14,10 +15,81 @@ angular.module('GrassLeg', [
   $routeProvider.when('/', {
     templateUrl: 'landingPage.html',
     controller: 'AppCtrl'
+  })
+  .otherwise({
+    redirectTo: '/'
   });
 })
 
-.controller("AppCtrl", function($scope, $document, smoothScroll) {
+.controller("AppCtrl", function($scope, $document, $route, $http, $mdDialog) {
+  $scope.personas = [
+  {
+    name: "Mary",
+    age: "44",
+    hometown: "Orlando, FL",
+    profPic: 'cartoon1.jpg',
+    bio: "Mary cares about her <b>childrens' school</b> and wants to make sure they are learning in the best environment possible. Her husband, Marco, plays way too much golf and she worries he's already thinking about <b>retirement</b>. Between her family and her part time Uber driving job, she <b>doesn't have too much time to devote to learning about politics</b>. Luckily, Poli is a quick, simple, and easy way for Mary to learn about what is happening in politics without taking vital time away from her family.",
+    legislation: [
+    {
+      name: "Assault Weapons Ban of 2015",
+      description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
+      date: '12/16/15'
+    },
+    {
+      name: "No Guns for Terrorists Act of 2015",
+      description: "To amend title 18, United States Code, to prohibit the sale of firearms to individuals suspected of terrorism, and for other purposes.",
+      date: '11/18/15'
+    },
+    {
+      name: "Reducing Gun Violence in our Neighborhoods Act of 2015",
+      description: "To reduce gun violence, increase mental health counseling, and enhance the tracking of lost and stolen firearms.",
+      date: '10/26/15'
+    }],
+  }, {
+    name: "John",
+    age: "20",
+    hometown: "Miami, FL",
+    profPic: "cartoon2.jpg",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    legislation: [
+    {
+      name: "Assault Weapons Ban of 2015",
+      description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
+      date: '12/16/15'
+    },
+    {
+      name: "No Guns for Terrorists Act of 2015",
+      description: "To amend title 18, United States Code, to prohibit the sale of firearms to individuals suspected of terrorism, and for other purposes.",
+      date: '11/18/15'
+    },
+    {
+      name: "Reducing Gun Violence in our Neighborhoods Act of 2015",
+      description: "To reduce gun violence, increase mental health counseling, and enhance the tracking of lost and stolen firearms.",
+      date: '10/26/15'
+    }]
+  }, {
+    name: "Bro-gan",
+    age: "20",
+    hometown: "Miami, FL",
+    profPic: "cartoon3.jpg",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    legislation: [
+    {
+      name: "Assault Weapons Ban of 2015",
+      description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
+      date: '12/16/15'
+    },
+    {
+      name: "No Guns for Terrorists Act of 2015",
+      description: "To amend title 18, United States Code, to prohibit the sale of firearms to individuals suspected of terrorism, and for other purposes.",
+      date: '11/18/15'
+    },
+    {
+      name: "Reducing Gun Violence in our Neighborhoods Act of 2015",
+      description: "To reduce gun violence, increase mental health counseling, and enhance the tracking of lost and stolen firearms.",
+      date: '10/26/15'
+    }]
+  }];
   $scope.legislation = {
     "Gun Control": [
     {
@@ -65,10 +137,23 @@ angular.module('GrassLeg', [
 
   $scope.topic_value = "Gun Control";
 
-  $scope.goToBottom = function() {
-    var target = document.getElementById('legislation-container');
-    smoothScroll(target);
-  };
+  $scope.submitEmail = function() {
+    if ($scope.email) {
+      $http.post('/newEmail', {email: $scope.email})
+        .then(function() {
+          var alert = $mdDialog.alert()
+              .parent(angular.element(document.querySelector('#popupContainer')))
+              .clickOutsideToClose(true)
+              .title('Thank you!')
+              .textContent('We will keep you posted on the development of our applications. Together, we are confident we change the way people engage with legislation.')
+              .ariaLabel('Email Submitted')
+              .ok('Close')
+          $mdDialog.show(alert).finally(function() {
+            $route.reload();
+          });
+        });
+    }
+  }
 })
 
 .directive('focus',
