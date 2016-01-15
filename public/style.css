@@ -84,6 +84,7 @@ input#email-input-box {
 
 .legislation-tabs {
     max-width: 800px;
+    width: 100%;
 }
 
 .persona-content {
@@ -100,12 +101,22 @@ input#email-input-box {
     max-width: 600px;
 }
 
+.bill-meta {
+    font-size: 12px;
+    color: gray;
+}
+
 .prof-pic {
     width: 100px;
     height: 100px;
     border-radius: 50px;
+    background-color: #5DC6DA;
 }
 
 .bio {
     padding: 0px 35px
+}
+
+md-list-item {
+    margin: 35px 0px;
 }

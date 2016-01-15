@@ -46,9 +46,10 @@
                         </md-card>
                     <md-list>
                         <h3>{{person.name}}'s feed</h3>
-                        <md-list-item class="md-2-line" ng-repeat="bill in person.legislation">
+                        <md-list-item class="md-3-line" ng-repeat="bill in person.legislation">
                             <md-icon md-svg-icon="ic_keyboard_arrow_right_black_24px.svg"></md-icon>
                             <div class="md-list-item-text">
+                                <span class="bill-meta">{{bill.meta}}</span>
                                 <h3> {{ bill.name }} </h3>
                                 <p> {{ bill.description }} </p>
                                 <p><b> {{ bill.date }} </b></p>
