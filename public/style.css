@@ -11,7 +11,7 @@ body {
 
 .fake-name > img {
     width: auto;
-    height: 60px;
+    height: 75px;
 }
 
 .first-part {
@@ -37,11 +37,19 @@ body {
         padding-top: 15px;
         margin-top: 40px;
     }
+
+    .bio {
+        padding: 0px 6px;
+    }
 }
 
 @media (min-width: 600px) {
     .get-email-box {
         border-left: 1px solid rgba(0, 0, 0, 0.13);
+    }
+
+    .bio {
+        padding: 0px 35px
     }
 }
 
@@ -74,12 +82,11 @@ input#email-input-box {
     font-size: 20px;
 }
 
-.divider {
-    height: 30px;
+.profile {
+    margin-bottom: 10px;
 }
-
-.topic-selector {
-    width: 200px;
+.profile-metadata {
+    margin-left: 10px;
 }
 
 .legislation-tabs {
@@ -113,10 +120,12 @@ input#email-input-box {
     background-color: #5DC6DA;
 }
 
-.bio {
-    padding: 0px 35px
-}
-
 md-list-item {
     margin: 35px 0px;
+}
+
+.icon {
+    width: 25px;
+    height: auto;
+    margin: 10px 35px 10px 0px;
 }
