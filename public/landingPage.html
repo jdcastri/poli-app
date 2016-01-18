@@ -33,9 +33,9 @@
         <md-tabs md-dynamic-height md-border-bottom md-center-tabs class="legislation-tabs">
             <md-tab ng-repeat="person in personas" label="{{person.name}}">
                 <md-content class="persona-content">
-                    <md-card>
-                        <md-card-content layout-gt-xs="row" layout-xs="column">
-                            <div class="profile" layout-gt-xs="column" layout-xs="row">
+                    <md-card class="persona-cards">
+                        <md-card-content layout="column">
+                            <div class="profile" layout="row">
                                 <img src="{{person.profPic}}" class="prof-pic">
                                 <div class="profile-metadata">
                                     <div class="md-headline">{{person.name}}</div>
@@ -45,7 +45,7 @@
                             </div>
                             <div class="bio" ng-bind-html="person.bio"></div>
                         </md-card-content>
-                        </md-card>
+                    </md-card>
                     <md-list>
                         <h3>{{person.name}}'s feed</h3>
                         <md-list-item class="md-3-line" ng-repeat="bill in person.legislation">

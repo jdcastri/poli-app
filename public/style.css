@@ -47,9 +47,11 @@ body {
     .get-email-box {
         border-left: 1px solid rgba(0, 0, 0, 0.13);
     }
+}
 
-    .bio {
-        padding: 0px 35px
+@media (min-width: 520px) {
+    .persona-cards {
+        margin: 10px auto;
     }
 }
 
@@ -92,6 +94,10 @@ input#email-input-box {
 .legislation-tabs {
     max-width: 800px;
     width: 100%;
+}
+
+.persona-cards {
+    max-width: 450px;
 }
 
 .persona-content {

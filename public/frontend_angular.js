@@ -56,7 +56,7 @@ angular.module('GrassLeg', [
     },
     {
       name: "State Minimum Wage",
-      description: "This Florida bill would increase the state minimum wage from $6.15 to $15, prohibiting an employer from paying an employee at a arate less than the state minimum wage.",
+      description: "This Florida bill would increase the state minimum wage from $6.15 to $15.00, prohibiting an employer from paying an employee at a arate less than the state minimum wage.",
       date: 'Introduced to the Florida Senate - 01/12/16',
       meta: 'Just for you! Related to Florida',
       pic: 'florida.png',
@@ -64,7 +64,7 @@ angular.module('GrassLeg', [
   }, {
     name: "Richard",
     age: "27",
-    hometown: "Manchester, NH",
+    hometown: "Rye, NH",
     profPic: "cartoon2.png",
     bio: "Richard has worked as  <b>teacher</b> since 2013. After having their first child,  Richard has shown interest in<b> purchasing a new home</b>. Richard has always been interested in <b>animal rights</b>, but has previously found it difficult to follow the legal landscape on the topic.",
     legislation: [
@@ -100,14 +100,13 @@ angular.module('GrassLeg', [
   }, {
     name: "Anita",
     age: "21",
-    hometown: "Marion VA",
+    hometown: "Marion, VA",
     profPic: "cartoon3.png",
     bio: "Anita is an <b>Aerospace Engineering student.</b> On campus, she works with an initiative aimed at spreading understanding and tolerance of all <b>faiths</b>. After her Study Abroad program in Korea, she has wanted to learn more about <b>foreign affairs</b> and to understand more about the action that America is taking.",
     legislation: [
     {
       name: "Federal Perkins Loan Program Extension Act of 2015",
-      description: "The legislation extends the authority of institutions of higher education (IHEs) to make loans to new borrowers under the Federal Perkins Loan program through September 30, 2016. IHEs may continue to disburse Perkins Loans through March 31, 2018, to allow students to continue or complete an academic program if the student received a Perkins loan prior to October 1, 2016, and the student has exhausted Federal Direct Stafford Loans." +
-                    "The bill prohibits any further automatic extensions of the Perkins Loan program.",
+      description: "Extends the Federal Perkins Loan Program through 2016. Federal Perkins Loans are among the most affordable need-based options for students, with low interest rates and flexible cancellation policies.",
       date: 'Became law - 12/18/15',
       meta: 'Just for you! Related to student loans',
       pic: 'school.png',
