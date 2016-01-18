@@ -31,6 +31,13 @@ angular.module('GrassLeg', [
     bio: "Mary is a proud <b>mother</b>. Between her family and full-time job, she doesn’t have much time to devote to learning about policy, but has strong views on <b>abortion</b>.",
     legislation: [
     {
+      name: "Assault Weapons Ban of 2015",
+      description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
+      date: 'Introduced to the House of Representatives - 12/16/15',
+      meta: 'Trending!',
+      pic: 'trending.png',
+    },
+    {
       name: "Every Student Succeeds Act",
       description: "The bill gives states more flexibility and responsibility for developing accountability systems, deciding how federally required tests should be weighed, selecting additional measures of student and school performance, and implementing teacher evaluation systems." +
                     "The bill requires school districts to plan and implement programs to improve student safety, health, well-being, and academic achievement." + 
@@ -69,6 +76,13 @@ angular.module('GrassLeg', [
     bio: "Richard has worked as  <b>teacher</b> since 2013. After having their first child,  Richard has shown interest in<b> purchasing a new home</b>. Richard has always been interested in <b>animal rights</b>, but has previously found it difficult to follow the legal landscape on the topic.",
     legislation: [
     {
+      name: "Assault Weapons Ban of 2015",
+      description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
+      date: 'Introduced to the House of Representatives - 12/16/15',
+      meta: 'Trending!',
+      pic: 'trending.png',
+    },
+    {
       name: "Helping Schools Protect Our Children Act of 2015",
       description: "This bill includes the training of school personnel to recognize child sexual abuse among the uses of grants to states and subgrants to local educational agencies and partnerships under that program.",
       date: 'Introduced to House of Representatives - 05/15/15',
@@ -104,6 +118,13 @@ angular.module('GrassLeg', [
     profPic: "cartoon3.png",
     bio: "Anita is an <b>Aerospace Engineering student.</b> On campus, she works with an initiative aimed at spreading understanding and tolerance of all <b>faiths</b>. After her Study Abroad program in Korea, she has wanted to learn more about <b>foreign affairs</b> and to understand more about the action that America is taking.",
     legislation: [
+    {
+      name: "Assault Weapons Ban of 2015",
+      description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
+      date: 'Introduced to the House of Representatives - 12/16/15',
+      meta: 'Trending!',
+      pic: 'trending.png',
+    },
     {
       name: "Federal Perkins Loan Program Extension Act of 2015",
       description: "Extends the Federal Perkins Loan Program through 2016. Federal Perkins Loans are among the most affordable need-based options for students, with low interest rates and flexible cancellation policies.",
