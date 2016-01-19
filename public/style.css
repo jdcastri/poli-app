@@ -127,6 +127,12 @@ input#email-input-box {
 
 .bill-name {
     font-size: 23px;
+    margin: 5px 0px;
+}
+
+.bill-subheader {
+    font-size: 15px;
+    margin-bottom: 6px;
 }
 
 .prof-pic {

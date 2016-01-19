@@ -31,40 +31,41 @@ angular.module('GrassLeg', [
     bio: "Mary is a proud <b>mother</b>. Between her family and full-time job, she doesn’t have much time to devote to learning about policy, but has strong views on <b>abortion</b>.",
     legislation: [
     {
-      name: "Assault Weapons Ban of 2015",
-      description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
-      // date: 'Introduced to the House of Representatives - 12/16/15',
+      name: "Increasing funding and flexibility in public education",
+      subheader: "The Every Student Succeeds Act  hopes to improve the public education system in the United States by providing grants and giving states more flexibility.",
+      description: "It provides grants aimed at improving low-performing schools, maintaining high-performing charter schools, and developing programs for American Indian students." +
+                  " Additionally, states have more flexibility and responsibility in their public education systems than before. For Florida, this means the state has more freedom in weighing and administering the FCAT, evaluating their teachers, and evaluating their students. New Florida state legislation to fulfill this responsibility will likely emerge in the next few months.",
       meta: 'Trending!',
       pic: 'trending.png',
     },
     {
-      name: "Every Student Succeeds Act",
-      description: "The bill gives states more flexibility and responsibility for developing accountability systems, deciding how federally required tests should be weighed, selecting additional measures of student and school performance, and implementing teacher evaluation systems." +
-                    "The bill requires school districts to plan and implement programs to improve student safety, health, well-being, and academic achievement." + 
-                    "The bill prohibits the Department of Education from imposing certain requirements on states or school districts seeking waivers from federal laws.",
+      name: "Fitting fitness in education",
+      subheader: "The Fitness Integrated Into Teaching (FIT) Kids Act hopes to improve physical fitness by integrating fitness into teaching.",
+      description: "It achieves this by providing grants to local educational agencies and community-based organizations. State governments can also receive funding by applying for specific ideas they may have. For example, if Florida finds its students need more incentive to stay active during winters, it may apply to the federal government with an idea for a winter indoor-sports initiative.",
       date: 'Became law - 12/10/15',
       meta: 'Just for you! Related to education',
       pic: 'school.png',
     },
     {
-      name: "Fitness Integrated Into Teaching (FIT) Kids Act",
-      description: "The bill gives the Department of Education the power to award grants to local educational agencies, community-based organizations, and states to initiate, expand, and improve physical education programs for kindergarten through 12th grade students." +
-                  "States willing to receive the grant must submit an analysis of needs in the areas of physical activity, physical education, fitness, and nutrition; a plan for improvement; and a description of how the state will implement a measurement system, coordinate with other state and federal programs, assist local educational agencies, and award subgrants.",
-      // date: 'Introduced to House of Representatives - 11/16/15',
-      meta: 'Just for you! Related to education',
-      pic: 'school.png',
-    },
-    {
-      name: "Automatic IRA Act of 2015",
-      description: "This bill requires certain employers who do not maintain qualifying retirement plans or arrangements to give their eligible employees a payroll deposit individual retirement account (IRA) arrangement",
-      // date: 'Introduced to the House of Representatives - 01/22/15',
+      name: "Ensuring employers help in saving for your retirement",
+      subheader: "This bill requires employers to allow their employees the option of automatically depositing payroll into a savings account called an Individual Retirement Account (IRA).",
+      description: "Money you set aside in an IRA will leave you with more after you retire because it receives big tax-breaks. With this law, employers are now required to provide the option of working with their employees to automatically deposit pay into their IRA.",
       meta: 'Just for you! Related to retirement',
       pic: 'job.png',
     },
     {
-      name: "State Minimum Wage",
-      description: "This Florida bill would increase the state minimum wage from $6.15 to $15.00, prohibiting an employer from paying an employee at a arate less than the state minimum wage.",
-      // date: 'Introduced to the Florida Senate - 01/12/16',
+      name: "Children from failed abortions must be given equal care",
+      subheader: "This bill requires that if a child is born alive after a failed abortion, the health care practitioner must provide the same care as they would provide to any other child.",
+      description: " Congress is discussing a law that would require any health care practitioner who is present when a child is born alive following an abortion or attempted abortion to practice same care as any other child born alive at the same age. The bill also ensures that the child be admitted immediately to a hospital." + 
+"The bill goes further and defines that the term “born alive” is: “complete expulsion or extraction from his or her mother, at any stage of development, who after such explusion or extraction breathes or has a beating heart, pulsation of the umbilical cord, or definite movement of voluntary muscles, regardless of whether the umbilical cord has been cut." +
+"Individuals who violate this  act are subject to a criminal fine, up to five years in prison, or criminal prosecution for murder. Finally, the woman may file a civil action for damages against the individual who violated this act.",
+      meta: 'Just for you! Related to abortion',
+      pic: 'baby.png',
+    },
+    {
+      name: "Increasing the minimum wage to $15.00",
+      subheader: "This bill requires proposes increasing the minimum wage in the state of Florida to $15 per hour.",
+      description: "The federal law requires that states have a minimum wage of $7.25 per hour, and Florida currently tops that at $8.05 per hour. Raising the minimum wage to a value as high as $15 is a rare proposition. Currently, highest state minimum wages are around $10 per hour in states like California and Massachusetts. Historically, a bill calling for this drastic of a raise in minimum wage has not been passed before, but it is being considered in the Florida Senate nonetheless.",
       meta: 'Just for you! Related to Florida',
       pic: 'florida.png',
     }],
