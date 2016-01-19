@@ -50,14 +50,17 @@
                     </md-card>
                     <md-list>
                         <h3>{{person.name}}'s feed</h3>
-                        <md-list-item class="md-3-line" ng-repeat="bill in person.legislation">
+                        <md-list-item class="md-3-line" ng-repeat="bill in person.legislation" ng-model="bill.show">
                             <img src="{{bill.pic}}" class="icon school-icon" hide-xs>
-                            <div class="md-list-item-text">
+                            <div class="md-list-item-text" ng-click="bill.show = !bill.show">
                                 <span class="bill-meta">{{bill.meta}}</span>
                                 <div class="bill-name">{{ bill.name }}</div>
                                 <div class="bill-subheader">{{bill.subheader}}</div>
-                                <p> {{ bill.description }} </p>
+                                <p ng-show="bill.show"> {{ bill.description }} </p>
                                 <p><b> {{ bill.date }} </b></p>
+                                <p><u>See <span ng-show="!bill.show">more</span>
+                                        <span ng-show="bill.show">less</span>
+                                </u></p>
                             </div>
                         </md-list-item>
                     </md-list>

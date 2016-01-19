@@ -135,6 +135,11 @@ input#email-input-box {
     margin-bottom: 6px;
 }
 
+.md-list-item-text {
+    outline: 0 none;
+    cursor: pointer;
+}
+
 .prof-pic {
     width: 100px;
     height: 100px;
