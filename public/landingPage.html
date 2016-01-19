@@ -3,10 +3,12 @@
         <div class="fake-name">
             <img src="Poli_Title.png">
         </div>
-        <div layout-gt-xs="row" layout-xs="column" layout-align-xs="center center" layout-align-gt-xs="center start" class="first-part">
-            <h2 class="md-display-1 mission-statement">We believe all legislation should be <b>distilled</b> and <b>tailored</b> for you! We're building an app that will help citizens like you become more aware of current legislation!</h2>
+        <h2 class="md-headline">Legislation, this time in plain English.</h2>
+        <div layout-gt-xs="row" layout-xs="column" layout-align-xs="center center" layout-align-gt-xs="center center" class="first-part">
+            <h2 class="md-display-1 mission-statement">We show you the laws that impact <b>you</b> most. By <b>summarizing legislation</b> and giving you a <b>personalized feed</b>, Poli will empower you to better understand current policy.</h2>
             <div class="get-email-box">
-                <h3 class="md-headline ">To learn more, add your email below</h3>
+                <h3 class="md-title ">To receive an email when we launch, add your email below.</h3>
+                <div class="marriage-statement">We promise not to distribute your email.</div>
                 <form name="email-submit">
                     <md-input-container>
                         <label class="email-label">Email ...</label>
@@ -29,14 +31,14 @@
 </div>
 <div id="legislation-container">
     <div class="legislation-opener" layout="column" layout-align="center center">
-        <h3 class="md-headline legislation-headline">Meet some of our potential future users...</h3>
+        <h3 class="md-headline legislation-headline">Meet some of our future users...</h3>
         <md-tabs md-dynamic-height md-border-bottom md-center-tabs class="legislation-tabs">
             <md-tab ng-repeat="person in personas" label="{{person.name}}">
                 <md-content class="persona-content">
                     <md-card class="persona-cards">
                         <md-card-content layout="column">
                             <div class="profile" layout="row">
-                                <img src="{{person.profPic}}" class="prof-pic">
+                                <img src="{{person.profPic}}" class="prof-pic {{person.name}}">
                                 <div class="profile-metadata">
                                     <div class="md-headline">{{person.name}}</div>
                                     <div class="md-subhead">Age {{person.age}}</div>
@@ -52,7 +54,7 @@
                             <img src="{{bill.pic}}" class="icon school-icon" hide-xs>
                             <div class="md-list-item-text">
                                 <span class="bill-meta">{{bill.meta}}</span>
-                                <h3> {{ bill.name }} </h3>
+                                <div class="bill-name"> {{ bill.name }} </div>
                                 <p> {{ bill.description }} </p>
                                 <p><b> {{ bill.date }} </b></p>
                             </div>
@@ -62,4 +64,7 @@
             </md-tab>
         </md-tabs>
     </div>
+</div>
+<div class="footer">
+    If you have any questions, concerns, jokes, or would like to help, please email us at <b>poli@mit.edu</b>
 </div>

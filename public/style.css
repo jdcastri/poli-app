@@ -11,11 +11,17 @@ body {
 
 .fake-name > img {
     width: auto;
-    height: 75px;
+    height: 120px;
 }
 
 .first-part {
     margin: 50px 0px 30px;
+}
+
+.marriage-statement {
+    font-style: italic;
+    font-size: 12px;
+    margin: 10px 0px 20px;
 }
 
 .mission-statement {
@@ -97,7 +103,7 @@ input#email-input-box {
 }
 
 .persona-cards {
-    max-width: 450px;
+    max-width: 600px;
 }
 
 .persona-content {
@@ -119,11 +125,26 @@ input#email-input-box {
     color: gray;
 }
 
+.bill-name {
+    font-size: 23px;
+}
+
 .prof-pic {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    background-color: #5DC6DA;
+}
+
+.Mary {
+    background-color: #FEEDA8;
+}
+
+.Richard {
+    background-color: #358590;
+}
+
+.Anita {
+    background-color: #B1375D;
 }
 
 md-list-item {
@@ -134,4 +155,11 @@ md-list-item {
     width: 25px;
     height: auto;
     margin: 10px 35px 10px 0px;
+}
+
+.footer {
+    padding: 52px;
+    text-align: center;
+    background: #424141;
+    color: white;
 }

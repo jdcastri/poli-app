@@ -33,7 +33,7 @@ angular.module('GrassLeg', [
     {
       name: "Assault Weapons Ban of 2015",
       description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
-      date: 'Introduced to the House of Representatives - 12/16/15',
+      // date: 'Introduced to the House of Representatives - 12/16/15',
       meta: 'Trending!',
       pic: 'trending.png',
     },
@@ -50,21 +50,21 @@ angular.module('GrassLeg', [
       name: "Fitness Integrated Into Teaching (FIT) Kids Act",
       description: "The bill gives the Department of Education the power to award grants to local educational agencies, community-based organizations, and states to initiate, expand, and improve physical education programs for kindergarten through 12th grade students." +
                   "States willing to receive the grant must submit an analysis of needs in the areas of physical activity, physical education, fitness, and nutrition; a plan for improvement; and a description of how the state will implement a measurement system, coordinate with other state and federal programs, assist local educational agencies, and award subgrants.",
-      date: 'Introduced to House of Representatives - 11/16/15',
+      // date: 'Introduced to House of Representatives - 11/16/15',
       meta: 'Just for you! Related to education',
       pic: 'school.png',
     },
     {
       name: "Automatic IRA Act of 2015",
       description: "This bill requires certain employers who do not maintain qualifying retirement plans or arrangements to give their eligible employees a payroll deposit individual retirement account (IRA) arrangement",
-      date: 'Introduced to the House of Representatives - 01/22/15',
+      // date: 'Introduced to the House of Representatives - 01/22/15',
       meta: 'Just for you! Related to retirement',
       pic: 'job.png',
     },
     {
       name: "State Minimum Wage",
       description: "This Florida bill would increase the state minimum wage from $6.15 to $15.00, prohibiting an employer from paying an employee at a arate less than the state minimum wage.",
-      date: 'Introduced to the Florida Senate - 01/12/16',
+      // date: 'Introduced to the Florida Senate - 01/12/16',
       meta: 'Just for you! Related to Florida',
       pic: 'florida.png',
     }],
@@ -78,28 +78,28 @@ angular.module('GrassLeg', [
     {
       name: "Assault Weapons Ban of 2015",
       description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
-      date: 'Introduced to the House of Representatives - 12/16/15',
+      // date: 'Introduced to the House of Representatives - 12/16/15',
       meta: 'Trending!',
       pic: 'trending.png',
     },
     {
       name: "Helping Schools Protect Our Children Act of 2015",
       description: "This bill includes the training of school personnel to recognize child sexual abuse among the uses of grants to states and subgrants to local educational agencies and partnerships under that program.",
-      date: 'Introduced to House of Representatives - 05/15/15',
+      // date: 'Introduced to House of Representatives - 05/15/15',
       meta: 'Just for you! Related to education',
       pic: 'school.png',
     },
     {
       name: "Vaccinate All Children Act of 2015",
       description: "This bill amends the Public Health Service Act to prohibit the Department of Health and Human Services from awarding grants to public entities of a state for preventive health service programs unless the state requires each student in public elementary or secondary school to be vaccinated. The bill provides an exception for students whose health would be endangered by vaccination in the opinion of a physician conforming to the accepted standard of medical care.",
-      date: 'Introduced to House of Representatives - 05/01/15',
+      // date: 'Introduced to House of Representatives - 05/01/15',
       meta: 'Just for you! Related to education',
       pic: 'school.png',
     },
     {
       name: "First Time Homeowner Savings Plan Act",
       description: "To amend the Internal Revenue Code of 1986 to increase the amount that can be withdrawn without penalty from individual retirement plans as first-time homebuyer distributions.",
-      date: 'Introduced to House of Representatives - 11/19/15',
+      // date: 'Introduced to House of Representatives - 11/19/15',
       meta: 'Just for you! Related to homeowners',
       pic: 'home.png',
     },
@@ -107,7 +107,7 @@ angular.module('GrassLeg', [
       name: "Refuge from Cruel Trapping Act",
       description: "Amends the National Wildlife Refuge System Administration Act of 1966 to prohibit the use or possession of body-gripping traps in the National Wildlife Refuge System." + 
       "Imposes on persons who possess or use such traps in the System: for a first offense, a civil fine of up to $500 for each body-gripping trap possessed or used; and for subsequent offenses, a civil fine of up to $1,000 for each body-gripping trap possessed or used, imprisonment for up to 180 days, or both such a civil fine and imprisonment.",
-      date: 'Introduced to House of Representatives - 04/23/15',
+      // date: 'Introduced to House of Representatives - 04/23/15',
       meta: 'Just for you! Related to wildlife preservation',
       pic: 'wildlife.png',
     }]
@@ -121,7 +121,7 @@ angular.module('GrassLeg', [
     {
       name: "Assault Weapons Ban of 2015",
       description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
-      date: 'Introduced to the House of Representatives - 12/16/15',
+      // date: 'Introduced to the House of Representatives - 12/16/15',
       meta: 'Trending!',
       pic: 'trending.png',
     },
@@ -137,14 +137,14 @@ angular.module('GrassLeg', [
       description: "Condemning violence, bigotry, and hateful rhetoric towards Muslims in the United States." +
                   "Whereas the victims of anti-Muslim hate crimes and rhetoric have faced physical, verbal, and emotional abuse because they were Muslim or believed to be Muslim;" +
                   "Whereas the constitutional right to freedom of religious practice is a cherished United States value and violence or hate speech towards any United States community based on faith is in contravention of the Nation’s founding principles;",
-      date: 'Introduced to House of Representatives - 12/17/15',
+      // date: 'Introduced to House of Representatives - 12/17/15',
       meta: 'Just for you! Related to civil rights',
       pic: 'civil_rights.png',
     },
     {
       name: "Summaries for the North Korea Sanctions Enforcement Act of 2015",
       description: "This bill requires the President to investigate any credible information of sanctionable activities involving North Korea and to designate and apply sanctions with respect to any person (including entities) knowingly engaging in or contributing to activities in North Korea, through export or import, which involve weapons of mass destruction, significant arms or related materiel, significant luxury goods, money laundering, censorship, or human rights abuses.",
-      date: 'Passed in the House of Representatives - 01/12/15',
+      // date: 'Passed in the House of Representatives - 01/12/15',
       meta: 'Just for you! Related to foreign affairs',
       pic: 'world.png',
     }]
@@ -158,7 +158,7 @@ angular.module('GrassLeg', [
           var alert = $mdDialog.alert()
               .clickOutsideToClose(true)
               .title('Thank you!')
-              .textContent('We will keep you posted on the development of our applications. Together, we are confident we change the way people engage with legislation.')
+              .textContent('We will keep you posted on the development of our applications. Together, we are confident we change the way people engage with legislation. Again, we promise not to distribute your email address. For any questions or concerns, feel free to contact us at poli@mit.edu.')
               .ariaLabel('Email Submitted')
               .ok('Close');
           $mdDialog.show(alert)
