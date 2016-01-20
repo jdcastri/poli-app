@@ -86,7 +86,7 @@ angular.module('GrassLeg', [
     hometown: "Rye, NH",
     profPic: "cartoon2.png",
     bio: "Richard has worked as  <b>teacher</b> since 2013. After having their first child,  Richard has shown interest in<b> purchasing a new home</b>. Richard has always been interested in <b>animal rights</b>, but has previously found it difficult to follow the legal landscape on the topic.",
-    legislation: [trending,
+    legislation: [
     {
       name: "Training school personnel to recognize sexual abuse",
       subheader: "The Helping Schools Protect Our Children Act releases funds to provide training to school personnel regarding how to recognize child sexual abuse",
@@ -103,6 +103,7 @@ angular.module('GrassLeg', [
       meta: 'Just for you! Related to education',
       pic: 'school.png',
     },
+    trending,
     {
       name: "Investing More Retirement Money into Your First Home",
       subheader: "The First Time Homeowner Savings Plan Act allows individuals to withdraw more from their IRA when purchasing their first home",
@@ -125,7 +126,7 @@ angular.module('GrassLeg', [
     hometown: "Marion, VA",
     profPic: "cartoon3.png",
     bio: "Anita is an <b>Aerospace Engineering student.</b> On campus, she works with an initiative aimed at spreading understanding and tolerance of all <b>faiths</b>. After her Study Abroad program in Korea, she has wanted to learn more about <b>foreign affairs</b> and to understand more about the action that America is taking.",
-    legislation: [trending,
+    legislation: [
     {
       name: "Continuing issuance of student loans through 2016",
       subheader: "This bill permits colleges to continue issuing Federal Perkins Loans to students through 2016.",
@@ -150,6 +151,7 @@ angular.module('GrassLeg', [
       meta: 'Just for you! Related to civil rights',
       pic: 'civil_rights.png',
     },
+    trending,
     {
       name: "Placing rigorous restrictions on the removal of Iranian sanctions",
       subheader: "This bill prevents removal of US  sanctions on Iran until stringent criteria are met",

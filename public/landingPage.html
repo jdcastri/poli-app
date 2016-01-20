@@ -31,7 +31,7 @@
 </div>
 <div id="legislation-container">
     <div class="legislation-opener" layout="column" layout-align="center center">
-        <h3 class="md-headline legislation-headline">Meet some of our future users...</h3>
+        <h3 class="md-headline legislation-headline">Meet some of our beta testers...</h3>
         <md-tabs md-dynamic-height md-border-bottom md-center-tabs class="legislation-tabs">
             <md-tab ng-repeat="person in personas" label="{{person.name}}">
                 <md-content class="persona-content">
@@ -49,7 +49,7 @@
                         </md-card-content>
                     </md-card>
                     <md-list>
-                        <h3>{{person.name}}'s feed</h3>
+                        <h3>Content from {{person.name}}'s feed</h3>
                         <md-list-item class="md-3-line" ng-repeat="bill in person.legislation" ng-model="bill.show">
                             <img src="{{bill.pic}}" class="icon school-icon" hide-xs>
                             <div class="md-list-item-text" ng-click="bill.show = !bill.show">
