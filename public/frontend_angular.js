@@ -25,7 +25,6 @@ angular.module('GrassLeg', [
   var trending = {
       name: "Assault Weapons Ban of 2015",
       description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
-      date: "Introduced - 12/16/2015",
       meta: 'Trending!',
       pic: 'trending.png',
   };
