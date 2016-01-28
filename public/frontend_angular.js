@@ -25,6 +25,7 @@ angular.module('GrassLeg', [
   var trending = {
       name: "Assault Weapons Ban of 2015",
       description: "To regulate assault weapons, to ensure that the right to keep and bear arms is not unlimited, and for other purposes.",
+      date: "Introduced - 12/16/15",
       meta: 'Trending!',
       pic: 'trending.png',
   };
@@ -32,8 +33,8 @@ angular.module('GrassLeg', [
   $scope.personas = [
   {
     name: "Mary",
-    age: "44",
-    hometown: "Orlando, FL",
+    age: "30",
+    hometown: "Boston, MA",
     profPic: 'cartoon1.png',
     bio: "Mary is a proud <b>mother</b>. Between her family and full-time job, she doesn’t have much time to devote to learning about policy, but has strong views on <b>abortion</b>.",
     legislation: [trending,
@@ -41,7 +42,7 @@ angular.module('GrassLeg', [
       name: "Increasing funding and flexibility in public education",
       subheader: "The Every Student Succeeds Act  hopes to improve the public education system in the United States by providing grants and giving states more flexibility.",
       description: "It provides grants aimed at improving low-performing schools, maintaining high-performing charter schools, and developing programs for American Indian students." +
-                  " Additionally, states have more flexibility and responsibility in their public education systems than before. For Florida, this means the state has more freedom in weighing and administering the FCAT, evaluating their teachers, and evaluating their students. New Florida state legislation to fulfill this responsibility will likely emerge in the next few months.",
+                  " Additionally, states have more flexibility and responsibility in their public education systems than before. For Massachusetts, this means the state has more freedom in weighing and administering the MCAS, evaluating their teachers, and evaluating their students. New Massachusetts state legislation to fulfill this responsibility will likely emerge in the next few months.",
       date: "Became law - 12/10/15",
       meta: 'Just for you! Related to education',
       pic: 'school.png',
@@ -49,7 +50,7 @@ angular.module('GrassLeg', [
     {
       name: "Fitting fitness in education",
       subheader: "The Fitness Integrated Into Teaching (FIT) Kids Act hopes to improve physical fitness by integrating fitness into teaching.",
-      description: "It achieves this by providing grants to local educational agencies and community-based organizations. State governments can also receive funding by applying for specific ideas they may have. For example, if Florida finds its students need more incentive to stay active during winters, it may apply to the federal government with an idea for a winter indoor-sports initiative.",
+      description: "It achieves this by providing grants to local educational agencies and community-based organizations. State governments can also receive funding by applying for specific ideas they may have. For example, if Massachusetts finds its students need more incentive to stay active during winters, it may apply to the federal government with an idea for a winter indoor-sports initiative.",
       date: 'Introduced - 11/16/2015',
       meta: 'Just for you! Related to education',
       pic: 'school.png',
